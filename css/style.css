@@ -15,8 +15,13 @@ li{
 }
 
 /* base styles */
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
     background: var(--secondary);
+    max-width: 100%;
     overflow-x: hidden;
     font-family: Rubik-Regular, sans-serif;
 }
@@ -191,13 +196,16 @@ footer img{
 
 /* small tablet styles */
 @media (min-width: 620px){
-
+    body{
+        overflow-x: hidden;
+    }
 }
 
 /* large tablets & laptops */
 @media (min-width: 960px){
     
     body{
+        overflow-x: hidden;
         font-size: 18px;
     }
 }
@@ -206,6 +214,7 @@ footer img{
 @media (min-width: 1200px){
     
     body{
+        overflow-x: hidden;
         font-size: 20px;
     }
 }
