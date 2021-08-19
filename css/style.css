@@ -192,8 +192,12 @@ footer .copyright{
 }
 footer .social{
     grid-column: 7/9;
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end;   */
+}
+.social li{
+    grid-column: span 4;
+    text-align: center;
 }
 footer li{
     margin: 0 6px;
@@ -243,6 +247,10 @@ footer img{
     }
     footer{
         background-size: 20%;
+    }
+    footer .social{
+        display: flex;
+        justify-content: flex-end;
     }
 }
 
@@ -307,6 +315,10 @@ footer img{
         padding: 40px 20px;
         background-size: 25%;
     }
+    footer .social{
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 
 /* desktop styles */
@@ -331,5 +343,9 @@ footer img{
         padding-top: 2px;
         border-top: blanchedalmond solid 2px;
         transition-duration: 0.2s;
+    }
+    footer .social{
+        display: flex;
+        justify-content: flex-end;
     }
 }
